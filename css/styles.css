@@ -208,13 +208,16 @@ ul {
 }
 
 .scrollButton {
-  position: relative;
-  left: 50%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 75px;
-  height: 50px;
-  cursor: pointer;
+    position: relative;
+    background: var(--color);
+    left: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 75px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
 #footer {
