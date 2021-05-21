@@ -152,6 +152,13 @@ ul {
   padding: 30px;
 }
 
+#project-area {
+  background: hsl(110deg, 16%, 89%);
+  opacity: 1;
+  border-top: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+}
+
 #project-prompt {
   position: relative;
   text-align: center;
@@ -218,6 +225,7 @@ ul {
   position: relative;
   background: var(--color);
   left: 47%;
+  bottom: -185%;
   margin-top: 20px;
   margin-bottom: 10px;
   width: 75px;
@@ -225,6 +233,7 @@ ul {
   cursor: pointer;
   opacity: 0.8;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .btn-arrow {
