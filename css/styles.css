@@ -166,10 +166,9 @@ ul {
   content: '';
   position: relative;
   display: block;
-  height: 100px;
-  width: 80%;
-  top: -5%;
-  margin-bottom: 10px;
+  min-height: 100px;
+  min-width: 80%;
+  margin-bottom: 20px;
   border-radius: 20px;
   background-color: var(--color);
   opacity: 0.5;
@@ -188,10 +187,8 @@ ul {
 
 .tooltiptext {
   position: absolute;
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 0;
-  padding: 2px;
+  min-width: 100%;
+  padding: 12px;
   text-align: center;
   color: black;
   font-weight: bold;
