@@ -207,6 +207,17 @@ ul {
   visibility: visible;
 }
 
+.scrollButton {
+  position: relative;
+  left: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 75px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
 #footer {
   position: relative;
   min-width: 100vw;
