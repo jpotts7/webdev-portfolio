@@ -253,7 +253,6 @@ ul {
   min-width: 100vw;
   bottom: 0;
   background-color: var(--color);
-  border: 2px solid darkgreen;
 }
 
 .footer-container {
