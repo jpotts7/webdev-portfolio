@@ -208,16 +208,28 @@ ul {
 }
 
 .scrollButton {
-    position: relative;
-    background: var(--color);
-    left: 50%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 75px;
-    height: 50px;
-    cursor: pointer;
-    opacity: 0.8;
-    border-radius: 10px;
+  position: relative;
+  background: var(--color);
+  left: 47%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 75px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.btn-arrow {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 35%;
+  right: 31%;
+  border-width: 5px;
+  border-style: solid;
+  border-color:#333 transparent transparent #333;
+  transform: rotate(45deg);
 }
 
 #footer {
