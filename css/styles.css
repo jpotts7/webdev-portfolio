@@ -210,7 +210,7 @@ ul {
 
 .project-image {
   height: 250px;
-  width: 300px;
+  max-width: 300px;
   border: 5px solid var(--color); 
   border-radius: 10px;
   box-shadow: -3px 3px 5px 3px lightslategray;
