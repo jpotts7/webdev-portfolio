@@ -40,7 +40,9 @@ body {
   padding: 0;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -162,9 +164,17 @@ ul {
 #about {
   font-size: 2rem;
   line-height: 1.5;
-  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   max-width: 50rem;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
+}
+
+@media screen and (max-width: 425px) {
+  #about {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 #project-area {
