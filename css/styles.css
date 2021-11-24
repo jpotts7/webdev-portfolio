@@ -35,7 +35,8 @@
 }
 
 html,
-body {
+body,
+p {
   margin: 0;
   padding: 0;
 }
@@ -188,17 +189,39 @@ ul {
   position: relative;
   text-align: center;
   font-size: 2em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #portfolio {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-height: 65vh;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.project {
-  height: 75%;
+@media screen and (max-width: 425px) {
+  #portfolio {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.project-link {
+  display: block;
+  max-width: 300px;
+  border: 5px solid var(--color);
+  border-radius: 10px;
+  box-shadow: -3px 3px 5px 3px lightslategray;
+  cursor: pointer;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
 }
 
 .tooltip {
@@ -233,26 +256,19 @@ ul {
   font-weight: bold;
 }
 
-.project-image {
-  height: 250px;
-  max-width: 300px;
-  border: 5px solid var(--color);
-  border-radius: 10px;
-  box-shadow: -3px 3px 5px 3px lightslategray;
-  cursor: pointer;
-}
-
 .container-item:hover > div {
   visibility: visible;
+}
+
+.scroll-button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .scrollButton {
   position: relative;
   background: var(--color);
-  left: 47%;
-  bottom: -185%;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 1.5rem auto 1rem;
   width: 75px;
   height: 50px;
   cursor: pointer;
@@ -283,12 +299,11 @@ ul {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.footer-container:first-child {
-  padding-left: 5px;
-}
-
-.footer-container:last-child {
-  padding-right: 5px;
+.closing:last-child {
+  text-align: right;
 }
