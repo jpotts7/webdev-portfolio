@@ -178,6 +178,14 @@ ul {
   }
 }
 
+.about-me strong {
+  display: block;
+}
+
+.about-me * {
+  margin-bottom: 2rem;
+}
+
 #project-area {
   background: hsl(110deg, 16%, 89%);
   opacity: 1;
