@@ -1,43 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Jeremy Potts WebDev</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ff15fae3fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js" async></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Jeremy Potts WebDev</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ff15fae3fc.js" crossorigin="anonymous"></script>
-  <script src="/js/main.js" async></script>
-</head>
-
-<body>
-  
+  <body>
     <!-- Navigation Bar -->
     <nav id="navbar">
-        <ul>
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#project-prompt">Projects</a></li>
-          <li class="nav-item">
-            <a href="http://www.linkedin.com/in/jeremy-james-potts" target="_blank">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#project-prompt">Projects</a></li>
+        <li class="nav-item">
+          <a
+            href="http://www.linkedin.com/in/jeremy-james-potts"
+            target="_blank"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<!-- Logo/Catch phrase? -->
+    <!-- Logo/Catch phrase? -->
     <section id="info">
-      <h1 class="name headline"><span class="symbol">/* </span> Jeremy Potts <span class="symbol"> */</span></h1>
+      <h1 class="name headline">
+        <span class="symbol">/* </span> Jeremy Potts
+        <span class="symbol"> */</span>
+      </h1>
       <h2 class="title headline">Front-End Web Development</h2>
       <!-- Contact Options -->
 
       <ul id="contact-list">
-
         <li id="email" class="contact">
           <a href="mailto: jeremy.potts7@gmail.com">
-           <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope"></i>
           </a>
         </li>
 
@@ -48,93 +58,141 @@
         </li>
 
         <li id="linkedin" class="contact">
-          <a href="https://www.linkedin.com/in/jeremy-james-potts/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/jeremy-james-potts/"
+            target="_blank"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
-
       </ul>
     </section>
 
-<!-- About Section -->
+    <!-- About Section -->
 
     <section id="about">
-      <p class="about-me">Hi! My name is Jeremy and I'm a front end web developer based in Toronto, Canada.
-        I am also a professional violinist, with over a decade of performance experience with world class orchestras,
-       ballet companies and small ensembles.<br>
-        But what does that have to do with web development?
-        Everything.<br>
-        Music has taught me how to problem solve; how to trust in my instincts and deliver under pressure;
-        how to manage my time and the time of others; how to communicate effectively and most importantly,
-        that in order to improve you have to dedicate yourself to being a life-long learner.<br>
-        I bring all of this and more to create web experiences that are functional, clean and effective.
-     </p>
+      <article class="about-me">
+        <p>
+          Hi! My name is Jeremy and I'm a front end web developer based in
+          Toronto, Canada. 🇨🇦
+        </p>
+        <p>
+          I am also a professional violinist, with over a decade of performance
+          experience with world class orchestras, ballet companies and small
+          ensembles.
+        </p>
+        <p>But what does that have to do with web development?</p>
+        <strong>Everything.</strong>
+        <p>
+          Music has taught me how to problem solve; how to trust in my instincts
+          and deliver under pressure; how to manage my time and the time of
+          others; how to communicate effectively and most importantly, that in
+          order to improve you have to dedicate yourself to being a life-long
+          learner.
+        </p>
+        <p>
+          I bring all of this and more to create web experiences that are
+          functional, clean and effective.
+        </p>
+      </article>
     </section>
 
-<!-- Project Grid -->
+    <!-- Project Grid -->
     <main id="project-area">
       <h2 id="project-prompt">Check out my recent projects!</h2>
       <section id="portfolio" class="container">
         <article id="project-1" class="project container-item">
           <div class="tooltip">
-            <p class="tooltiptext">My personal artist page. Created on wordpress with an Ares child theme.</p>
+            <p class="tooltiptext">
+              My personal artist page. Created on wordpress with an Ares child
+              theme.
+            </p>
           </div>
           <a href="http://www.jeremypottsviolin.com" target="_blank">
-            <img src="/img/jp_violinist.jpg" class="project-image" alt="Website for violinist, Jeremy Potts">
+            <img
+              src="/img/jp_violinist.jpg"
+              class="project-image"
+              alt="Website for violinist, Jeremy Potts"
+            />
           </a>
         </article>
 
         <article id="project-2" class="project container-item">
           <div class="tooltip">
-            <p class="tooltiptext">A marathon pace calculator, made with React.</p>
+            <p class="tooltiptext">
+              A marathon pace calculator, made with React.
+            </p>
           </div>
-          <a href="https://marathon-pace-calculator.netlify.app/" target="_blank">
-            <img src="/img/marathonCalc.png" class="project-image" alt="Marathon Pace Calculator">
+          <a
+            href="https://marathon-pace-calculator.netlify.app/"
+            target="_blank"
+          >
+            <img
+              src="/img/marathonCalc.png"
+              class="project-image"
+              alt="Marathon Pace Calculator"
+            />
           </a>
         </article>
 
         <article id="project-3" class="project container-item">
           <div class="tooltip">
-            <p class="tooltiptext">A javascript shopping cart for a fictional hockey card store.</p>
+            <p class="tooltiptext">
+              A javascript shopping cart for a fictional hockey card store.
+            </p>
           </div>
           <a href="https://hockey-card-store.netlify.app" target="_blank">
-            <img src="/img/jp_hockey.jpg" class="project-image" alt="Hockey Card Shop">
+            <img
+              src="/img/jp_hockey.jpg"
+              class="project-image"
+              alt="Hockey Card Shop"
+            />
           </a>
         </article>
 
         <article id="project-4" class="project container-item">
           <div class="tooltip">
-            <p class="tooltiptext">An online music lesson form styled with Bootstrap.</p>
-          </div>   
+            <p class="tooltiptext">
+              An online music lesson form styled with Bootstrap.
+            </p>
+          </div>
           <a href="https://violin-lesson-form.netlify.app" target="_blank">
-            <img src="/img/lesson_form.jpg" class="project-image" alt="Violin lesson form">
+            <img
+              src="/img/lesson_form.jpg"
+              class="project-image"
+              alt="Violin lesson form"
+            />
           </a>
         </article>
 
-         <article id="project-5" class="project container-item">
+        <article id="project-5" class="project container-item">
           <div class="tooltip">
             <p class="tooltiptext">A violin made with CSS/SASS.</p>
-          </div>   
+          </div>
           <a href="https://codepen.io/jpotts7/full/oNYdLbg" target="_blank">
-            <img src="/img/css_violin.png" class="project-image" alt="CSS Violin">
+            <img
+              src="/img/css_violin.png"
+              class="project-image"
+              alt="CSS Violin"
+            />
           </a>
         </article>
       </section>
       <!-- Scroll Button -->
-        <button class="scrollButton">
-          <span class="btn-arrow"></span>
-        </button>
+      <button class="scrollButton">
+        <span class="btn-arrow"></span>
+      </button>
     </main>
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <section id="footer">
       <div class="footer-container">
-        <p class="closing">No frills, no frameworks. Made using only HTML, CSS and Javascript.</p>
+        <p class="closing">
+          No frills, no frameworks. Made using only HTML, CSS and Javascript.
+        </p>
         <p class="closing">Copyright 2021 by Jeremy Potts</p>
       </div>
-  </section>
-  
-</body>
-
+    </section>
+  </body>
 </html>

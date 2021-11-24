@@ -1,25 +1,41 @@
 :root {
-  --main-font: 'Dosis', sans-serif;
+  --main-font: "Dosis", sans-serif;
   --color: rgb(115, 148, 108);
+  font-size: 16px;
 }
 
 @keyframes rise {
-  0% {transform: translateY(500%);}
-  100% {transform: translateY(0);}
+  0% {
+    transform: translateY(500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1.0;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
-  0% {transform: scale(1.0);}
-  50% {transform: scale(1.1);}
-  100% {transform: scale(1.15);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -31,7 +47,7 @@ html, body {
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.5;
   scroll-behavior: smooth;
 }
 
@@ -47,7 +63,7 @@ a {
 }
 
 a img {
-  height: 32px;
+  height: 2rem;
 }
 
 ul {
@@ -63,14 +79,14 @@ ul {
 .nav-item {
   position: relative;
   color: var(--color);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   list-style: none;
   opacity: 0.75;
 }
 
 .nav-item:hover {
-  opacity: 1.0;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -79,7 +95,7 @@ ul {
   position: absolute;
   width: 0%;
   transition: width 300ms;
-  height: 5px;
+  height: 2px;
   bottom: -5px;
   background-color: var(--color);
 }
@@ -94,6 +110,8 @@ ul {
   margin-top: 30vh;
   line-height: 1;
   font-size: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .headline {
@@ -102,7 +120,7 @@ ul {
 
 .name {
   display: flex;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 10px;
   justify-content: center;
 }
@@ -119,7 +137,8 @@ ul {
 }
 
 #contact-list {
-  width: 50vw;
+  width: 100%;
+  max-width: 30rem;
   margin: 20px auto;
   animation: rise 2s cubic-bezier(0.55, 0.09, 0.25, 1.02);
 }
@@ -141,15 +160,11 @@ ul {
 }
 
 #about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  min-width: 100vw;
   font-size: 2rem;
   line-height: 1.5;
-  text-align: center;
-  padding: 30px;
+  padding: 3rem;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 #project-area {
@@ -177,7 +192,7 @@ ul {
 }
 
 .tooltip {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   min-height: 100px;
@@ -190,7 +205,7 @@ ul {
 }
 
 .tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 33%;
@@ -211,7 +226,7 @@ ul {
 .project-image {
   height: 250px;
   max-width: 300px;
-  border: 5px solid var(--color); 
+  border: 5px solid var(--color);
   border-radius: 10px;
   box-shadow: -3px 3px 5px 3px lightslategray;
   cursor: pointer;
@@ -244,7 +259,7 @@ ul {
   right: 31%;
   border-width: 5px;
   border-style: solid;
-  border-color:#333 transparent transparent #333;
+  border-color: #333 transparent transparent #333;
   transform: rotate(45deg);
 }
 
@@ -267,10 +282,3 @@ ul {
 .footer-container:last-child {
   padding-right: 5px;
 }
-
-
-
-
-
-
-
